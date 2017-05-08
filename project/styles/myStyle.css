@@ -1,0 +1,487 @@
+body {
+    direction: rtl;
+    background-image: url('../images/Untitled-1.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin: 0;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    position:relative;
+
+}
+
+/*הטמעת פונט*/
+@font-face {
+    font-family: 'myFont';
+      src: url('../fonts/gveretlevinalefalefalef-regular-webfont.eot');
+      src: url('../fonts/gveretlevinalefalefalef-regular-webfont.eot') format('embedded-opentype'),
+          url('../fonts/gveretlevinalefalefalef-regular-webfont.woff2') format('woff2'),
+          url('../fonts/gveretlevinalefalefalef-regular-webfont.woff') format('woff'),
+          url('../fonts/gveretlevinalefalefalef-regular-webfont.ttf') format('truetype'),
+          url('../fonts/gveretlevinalefalefalef-regular-webfont.svg#myFont') format('svg');
+
+
+    font-weight:normal;
+    font-style: normal;
+}
+
+
+
+
+/*רקע לתפריט ניווט*/
+header {   
+     background-color: white;
+     position:fixed;
+     overflow: hidden;
+     top: 0;
+     background-position:right;
+     width:100%;
+     height:80px;
+     background-position:top;
+     display:inline-block;
+     padding: 20px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       z-index: 3;
+     right: 0;
+}
+
+/*לוגו*/
+header h1{
+   
+    color: black;
+    font-size:35pt;
+    font-family : myFont;
+    width: 350px;
+    text-align:center;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-shadow: 5px 5px 2px #aaaaaa;
+    position:absolute;
+}
+
+header h2{
+    position:absolute;
+    margin-top:65px;
+    font-size: 16pt;
+    color: red;
+    font-weight: lighter;
+    font-family: myFont;
+    display:inline-block;
+    margin-right: 230px;
+}
+
+/*התגים הבאים אחראיים על תפריט הניווט*/
+ul{
+    list-style: none;
+   
+     
+}
+
+#myNav ul li {
+    display:inline-block;
+   
+   
+}
+ #myNav{
+    margin-right:450px;
+    display: inline-block;
+    width:700px;
+}
+#myNav ul li a{
+    display: inline-block;
+    float: right;
+    border-left: 1px solid black;
+    text-decoration: none;
+    font-family: myFont;
+    margin-left: 30px;
+    padding-left: 10px;
+    font-size:14pt;
+    color: black;
+    margin-top:30px;
+   
+}
+
+
+
+#myNav ul li a:hover {
+    color: red;
+}
+
+/*תמונת הפרופיל שלי*/
+body #me {
+    background-image: url('../images/me.jpg');
+    background-size: 300px;
+    width:300px;
+    height:300px;
+   background-repeat: no-repeat;
+   margin-right: 620px;
+   margin-top: 200px;
+   display: inline-block;
+   position: absolute;
+   border-radius: 50%;
+   right: 0;
+
+   
+}
+
+#myNav #selected{
+    color: red;
+}
+
+/*פסקה קצת עליי*/
+ #about{
+    margin-top: 200px;
+    margin-right: 100px;
+    display:inline-block;
+    position:absolute;
+    padding: 10px;
+    width: 400px;
+   right: 0px;
+
+
+}
+
+ #about h2{
+     color: red;
+     font-size: 20pt;
+     font-family: myFont;
+     font-weight: lighter;
+ }
+
+ #about p{
+     line-height: 1.8;
+     font-size:14pt;
+ }
+  
+/*כותרת העבודות שלי*/
+ #myWorks{
+     color: red;
+     font-size: 20pt;
+     position: absolute;
+     margin-top: 550px;
+     font-family: myFont;
+     margin-right: 400px;
+     font-weight: lighter;
+     right: 0;
+ }
+/*תמונת פרוייקט תקשורת חזותית*/
+#hazutit {
+    background-image: url('../images/2.JPG');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 600px;
+    margin-right: 1px;
+    background-position-y: -40px;
+    right: 0;
+  
+}
+
+/*אפקט סגירה*/
+.photo{
+    position:relative;
+    width:50%;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: darkred;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.photo:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text a {
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width:300px;
+  height:300px;
+  text-align:center;
+  padding-top:300px;
+  text-decoration:none;
+  color:white;
+}
+
+/*תמונת אחריי באלפון*/
+#alfun {
+    background-image: url('../images/444.JPG');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 600px;
+    margin-right: 350px;
+    background-position-x: -70px;
+    right: 0;
+  
+}
+
+
+/*תמונת גרפיקה*/
+#grafic {
+    background-image: url('../images/555.JPG');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: 600px;
+    margin-right: 700px;
+    background-position-x: -50px;
+    background-position-y: -30px;
+    right: 0;
+}
+
+
+/*כל הזכויות שמורות*/
+#space{
+    margin-top:1000px;
+    display: inline-block;
+    position: relative;
+    border-top:1px solid black;
+}
+
+/*תבנית לפסקה*/
+#hazutitId {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+   padding: 20px;
+   margin-right: 1px;
+   margin-top: 10px;
+  
+    
+}
+
+/*כותרות לעמוד*/
+.title{
+    color: red;
+    font-family: myFont;
+    width:180px;
+    margin-top:150px;
+    font-size: 20pt;
+    font-weight: lighter;
+    margin-right: 30px;
+      text-shadow: 2px 2px 2px #aaaaaa;
+      border-bottom: 3px solid red;
+      padding: 10px;
+      border-radius: 20px;
+      display: inline-block;
+
+    
+   
+}
+
+/*תמונת עמוד תקשורת חזותית*/
+#photoHaz {
+    background-image: url('../images/2.JPG');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    margin-right: 500px;
+    margin-top: 10px;
+    background-position-x: 40px;
+    display:inline-block;
+   
+}
+
+/*טקסט בפסקה בעמוד תקשורת חזותית*/
+#hazutitId p {
+    line-height: 1.8;
+    width: 400px;
+    display: inline-block;
+    position:absolute;
+    margin-right: 80px;
+    margin-top: 20px;
+    font-size: 14pt;
+
+}
+
+
+/*קישור לתמונה קפה הלילה של ואן גןך*/
+#hazutitId a{
+    color: red;
+}
+
+/*כותרת צפייה בוידאו*/
+#vidtit{
+    color: red;
+    display: inline-block;
+    margin-top:520px;
+    margin-right: 400px;
+    font-size: 25px;
+    font-family: myFont;
+
+}
+
+/*הגדרת שוליים לוידאו*/
+#hazVideo{
+    margin-top: 20px;
+    margin-right: 200px;
+
+}
+
+
+/*תמונה לעמוד ייצוג ידע של אחרי באלפון*/
+#photoAlfun {
+    background-image: url('../images/444.JPG');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    margin-right: 500px;
+    margin-top: 30px;
+    background-position-x: 40px;
+    display: inline-block;
+}
+
+
+
+/*מיקום פס השמע*/
+#audiospong{
+
+margin-right: 300px;
+    margin-top: 450px;
+    position: absolute;
+    display:inline-block;
+}
+
+
+
+/*כותרת לשיר אוירה בעמוד*/
+#titlesong{
+
+    color: red;
+    font-family: myFont;
+    font-size: 20pt;
+    margin-top: 410px;
+    margin-right: 400px;
+    display: inline-block;
+    position: absolute;
+}
+
+/*כותרת עמוד לגרפיקה ממוחשבת*/
+#titlegr{
+      color: red;
+    font-family: myFont;
+    width:200px;
+    margin-top:150px;
+    font-size: 20pt;
+    font-weight: lighter;
+    margin-right: 30px;
+      text-shadow: 2px 2px 2px #aaaaaa;
+      border-bottom: 3px solid red;
+      padding: 10px;
+      border-radius: 20px;
+      display: inline-block;
+}
+
+
+/*תמונה של פורטרט עצמי לעמוד גרפיקה ממוחשבת*/
+#photogr{
+     background-image: url('../images/555.JPG');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    margin-right: 500px;
+    margin-top: 30px;
+    background-position-x: -20px;
+    display: inline-block;
+}
+
+
+/*התגיות הבאות מיועדות לטופס יצירת קשר*/
+label{
+     display:block;
+     margin-top:10px;
+}
+
+input[type ='text'] , input[type ='password'] ,textarea , select {
+    display:block;
+    margin-bottom:15px;
+}
+
+input[type ='submit']
+{
+ margin-top:10px;
+}
+
+textarea{
+    height:200px;
+    width: 400px;
+   
+}
+
+#myMS{
+padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-family: Arial;
+}
+
+input[type=text] {
+ 
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#myMS:focus{
+     border: 3px solid #555;
+}
+
+#Send{
+        background-color: darkred;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
